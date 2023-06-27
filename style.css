@@ -1,21 +1,28 @@
-*{
+:root {
+    --corazul: #5579ba;
+    --corverde: #41a377;
+    --corcinza: #919293;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Sora',sans-serif;
+    font-family: "Sora", sans-serif;
 }
-html{
+html {
     height: 100vh;
+    font-size: 14px;
 }
 
-body{
+body {
     background: url(./images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
 }
-.container{
-    background-color: red;
+.container {
+    /* background-color: red; */
     max-width: 540px;
     margin: auto;
     padding: 20px;
@@ -25,4 +32,55 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.gradiente {
+    background: linear-gradient(to right, var(--corazul), var(--corverde));
+}
+
+.prifile-picture {
+    width: 120px;
+    border-radius: 50%;
+}
+
+.username {
+    font-weight: 400;
+    font-size: 2em;
+    margin: 16px 0;
+}
+
+.description {
+    font-size: 1em;
+    color: var(--corcinza);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0;
+    gap: 1.2em;
+}
+
+.list-item {
+    font-size: 1.2em;
+    height: 4em;
+    border-radius: 2em;
+    display: flex;
+    
+}
+.list-link{
+    display: flex;
+    padding: 0 45px;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.list-link>img{
+    width: 1.2em;
 }
